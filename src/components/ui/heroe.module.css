@@ -1,0 +1,50 @@
+
+
+
+.animationLeft{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation-name:showImageLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.animationRight{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation-name:showImageRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showImageLeft {
+    from {
+        opacity:0;
+        transform: translateX(-200px);
+        
+    }
+    to {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+@keyframes showImageRight {
+    from {
+        opacity:0;
+        transform: translateX(200px);
+        
+    }
+    to {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
