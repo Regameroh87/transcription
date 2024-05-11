@@ -1,13 +1,13 @@
 
-import style from "./heroe.module.css";
+import style from "./animations.module.css";
 
 
 export default function Heroe({ speakers}: {speakers:string}) {
 
   return (
-    <section className=" flex w-[300px] h-[300px] mb-20 justify-center transition ease-in md:w-[500px] md:h-[500px]">
+    <section className=" hidden lg:flex w-[100px] h-[100px] justify-center items-center transition ease-in md:w-[500px] md:h-[500px]">
      
-      {speakers === "agent" && (<div className={style.animationLeft}>
+      {speakers === "agent" && (<div className={style.animationSliceLeft}>
 
         <svg
           data-name="Layer 1"
@@ -112,7 +112,7 @@ export default function Heroe({ speakers}: {speakers:string}) {
           />
         </svg>
       </div>)}
-      {speakers === "user" && (<div className={style.animationRight}>
+      {speakers === "user" && (<div className={style.animationSliceRight}>
         <svg
           data-name="Layer 1"
           width="912.67004"

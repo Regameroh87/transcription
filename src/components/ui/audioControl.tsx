@@ -6,15 +6,13 @@ export default function AudioControl({
   reproductor,
   setIsPlaying,
   setSpeakers,
-
 }: {
   reproductor: React.RefObject<HTMLAudioElement>;
   setIsPlaying: any;
-  setSpeakers:any;
-
+  setSpeakers: any;
 }) {
   const [currentTime, setCurrentTime] = useState(0);
-  
+
   const duration = reproductor.current?.duration;
 
   const formatTime = (time: number) => {
@@ -31,16 +29,19 @@ export default function AudioControl({
       reproductor.current?.removeEventListener("timeupdate", handleChangeTime);
       reproductor.current?.removeEventListener("ended", handleAudioEnded);
     };
-  },[]);
+  }, []);
 
   const handleChangeTime = () => {
     setCurrentTime(reproductor.current!.currentTime);
-    console.log(reproductor.current!.currentTime)
-    const speakers = transcripcion.find((t)=> Math.floor(reproductor.current!.currentTime) === Math.floor(t.start))
-    console.log(speakers)
-    if (speakers){
-      setSpeakers(speakers.role)
-    } 
+    console.log(reproductor.current!.currentTime);
+    const speakers = transcripcion.find(
+      (t) =>
+        Math.floor(reproductor.current!.currentTime) === Math.floor(t.start)
+    );
+    console.log(speakers);
+    if (speakers) {
+      setSpeakers(speakers.role);
+    }
   };
 
   const handleAudioEnded = () => {
