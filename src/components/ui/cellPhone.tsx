@@ -7,11 +7,12 @@ export default function CellPhone ({isPlaying, reproductor, handleClick} : {isPl
         <section className=" block relative w-[735px] h-[735px] ">
         <div className=" flex absolute rounded-2xl top-10 left-44 w-96 h-[85%] bg-gradient-to-b from-gray-200  via-orange-200 to-orange-400"></div>
         <img
-          className="absolute top-0 left-0 w-full h-full "
+          className="absolute top-0 left-0 w-full h-full text-gray-400 "
           src="/phone.svg"
           alt=""
         />
         <div className=" flex flex-col items-center absolute top-36 left-[17.5rem] text-black">
+        
         <h1 className=" text-3xl font-bold">Universidad</h1>
         <h2 className={`${isPlaying ? "flex" : "hidden "} text-sm`}>Movil +542262573568</h2>
         </div>
