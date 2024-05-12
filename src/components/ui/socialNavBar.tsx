@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function SocialNavBar() {
   return (
-    <section className=" fixed flex gap-1 top-4 right-4 w-auto h-auto p-4 z-10">
+    <section className=" fixed flex gap-1 top-4 right-48 md:right-4 w-auto h-auto p-4 z-10">
       <Link href={"https://www.linkedin.com/in/rodrigo-gamero-16b943268/"}>
         <svg
           className=" flex hover:-translate-y-1 text-blue-400 hover:text-blue-700 hover:scale-105 transition ease-out active:scale-95 active:text-blue-900"
