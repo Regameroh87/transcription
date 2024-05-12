@@ -4,10 +4,10 @@ import Volume from "./volume";
 
 export default function CellPhone ({isPlaying, reproductor, handleClick} : {isPlaying:boolean; handleClick:(value:boolean)=>void; reproductor:React.RefObject<HTMLAudioElement>}) {
     return (
-        <section className=" block relative w-[735px] h-[735px] ">
+        <section className=" flex justify-center relative w-[735px] h-[735px] ">
         <div className=" flex absolute rounded-2xl top-10 left-44 w-96 h-[85%] bg-gradient-to-b from-gray-200  via-orange-200 to-orange-400"></div>
         <img
-          className="absolute top-0 left-0 w-full h-full text-gray-400 "
+          className="absolute w-full h-full text-gray-400 "
           src="/phone.svg"
           alt=""
         />

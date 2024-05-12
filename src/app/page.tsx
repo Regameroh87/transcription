@@ -5,7 +5,7 @@ import Title from "@/components/ui/title";
 export default function Home() {
 
   return (
-    <main className="flex min-h-screen w-screen flex-col items-center">
+    <main className="flex min-h-screen w-screen flex-col justify-center items-center">
       <div className=" my-28">
       <Title/>
       </div>

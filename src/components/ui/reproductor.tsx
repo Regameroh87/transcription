@@ -26,7 +26,7 @@ export default function Reproductor() {
 
   return (
     <div className=" flex flex-col justify-center items-center gap-4 w-full h-full">
-      <div className=" flex flex-wrap-reverse mb-8 justify-center">
+      <div className=" flex mb-8 justify-center">
         <CellPhone
           isPlaying={isPlaying}
           handleClick={handleClick}
