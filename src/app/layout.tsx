@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     images: [
       {
         type: "image/jpeg",
-        url: "/transcription.jpeg",
+        url: "https://transcription-ogx09gbk4-rodrigos-projects-794b4790.vercel.app/transcription.jpeg",
         width: 1152, 
         height: 627, 
         alt: "Transcription",
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="/transcription.jpeg"/>
+        <meta property="og:image" content="https://transcription-ogx09gbk4-rodrigos-projects-794b4790.vercel.app/transcription.jpeg"/>
       </head>
       <body className={inter.className}>
         <SocialNavBar/>
