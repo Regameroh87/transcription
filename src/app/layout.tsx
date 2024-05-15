@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       {
         type: "image/jpeg",
         url: "/transcription.jpeg",
-        width: 1200, 
+        width: 1152, 
         height: 627, 
         alt: "Transcription",
       },
