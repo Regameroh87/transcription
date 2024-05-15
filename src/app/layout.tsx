@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     images: [
       {
         type:"image/png",
-        url: "/transcriptionImagen.png",
+        url: "https://transcription-ogx09gbk4-rodrigos-projects-794b4790.vercel.app/transcription.png",
         width: 1200, 
         height: 627, 
         alt: "Transcription",
