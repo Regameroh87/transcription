@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="https://transcription-ogx09gbk4-rodrigos-projects-794b4790.vercel.app/transcription.jpeg"/>
+        <meta property="og:image" content="/transcription.jpeg"/>
       </head>
       <body className={inter.className}>
         <SocialNavBar/>
