@@ -4,6 +4,8 @@ import "./globals.css";
 import SocialNavBar from "@/components/ui/socialNavBar";
 import Footer from "@/components/ui/footer";
 
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -31,6 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:image" content="/transcription.jpeg"/>
+      </head>
       <body className={inter.className}>
         <SocialNavBar/>
         {children}
