@@ -2,7 +2,7 @@ import { transcripcion } from "@/lib/variables";
 
 export default function Transcription({reproductor, setIsPlaying}:{reproductor:React.RefObject<HTMLAudioElement>; setIsPlaying:any}) {
     return (
-      <div className=" flex w-80 md:w-3/4 mx-auto mt-4 ">
+      <div className=" flex w-80 md:w-3/4 max-w-[800px] mx-auto mt-4 ">
         <ul>
           {transcripcion.map((t, index) => {
             return (
